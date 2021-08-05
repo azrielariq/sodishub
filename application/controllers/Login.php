@@ -51,4 +51,10 @@ class Login extends CI_Controller
             </script>';
         }
     }
+
+    public function logout()
+	{
+		$this->session->unset_userdata('session_data');
+        redirect(base_url());
+	}
 }

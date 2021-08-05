@@ -123,7 +123,7 @@ desired effect
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-right">
-                  <a href="<?php echo base_url() ?>Login/logout" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url() ?>login/logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -150,28 +150,16 @@ desired effect
         </div>
       </div>
 
-      <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-        </div>
-      </form>
-      <!-- /.search form -->
-
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="<?php echo ($nav == 'dashboard' ? 'active' : '') ?>">
-          <a href="<?php echo base_url() ?>admin/dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+          <a href="<?php echo base_url() ?>admin/dashboard"><i class="fa fa-dashboard"></i><span> Dashboard</span></a>
         </li>
         <li class="<?php echo ($nav == 'atk' || 'kebersihan' || 'cetak' || 'listrik' ? 'active' : '') ?> treeview">
           <a href="#">
-            <i class="fa fa-archive"></i> <span>Stock Barang</span>
+            <i class="fa fa-archive"></i><span> Stock Barang</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -191,21 +179,24 @@ desired effect
             </li>
           </ul>
         </li>
-        <li class="<?php echo ($nav == 'jimpitan' ? 'active' : '') ?>">
-          <a href="<?php echo base_url() ?>admin/jimpitan"><i class="fa fa-money"></i> <span>Jimpitan</span></a>
+        <li class="<?php echo ($nav == 'brg_masuk' ? 'active' : '') ?>">
+          <a href="<?php echo base_url() ?>admin/barang_masuk"><i class="fa fa-download"></i><span> Barang Masuk</span></a>
         </li>
-        <li class="<?php echo ($nav == 'informasi' ? 'active' : '') ?>">
-          <a href="<?php echo base_url() ?>admin/Informasi"><i class="fa fa-bullhorn"></i> <span>Broadcast Informasi</span></a>
+        <li class="<?php echo ($nav == 'brg_keluar' ? 'active' : '') ?>">
+          <a href="<?php echo base_url() ?>admin/barang_keluar"><i class="fa fa-upload"></i><span> Barang Keluar</span></a>
         </li>
-        <li class="<?php echo ($nav == 'komplain' ? 'active' : '') ?>">
-          <a href="<?php echo base_url() ?>admin/Komplain"><i class="fa fa-deaf"></i> <span>Komplain</span></a>
+        <li class="<?php echo ($nav == 'upb' ? 'active' : '') ?>">
+          <a href="<?php echo base_url() ?>admin/upb"><i class="fa fa-users"></i><span> Data UPB</span></a>
         </li>
         <li class="<?php echo ($nav == 'pengguna' ? 'active' : '') ?>">
-          <a href="<?php echo base_url() ?>admin/Pengguna"><i class="fa fa-user-circle"></i> <span>Pengguna</span></a>
+          <a href="<?php echo base_url() ?>admin/pengguna"><i class="fa fa-user-circle"></i><span> Pengguna</span></a>
+        </li>
+        <li class="<?php echo ($nav == 'rekap' ? 'active' : '') ?>">
+          <a href="<?php echo base_url() ?>admin/rekap"><i class="fa fa-file"></i><span> Rekap Stock Opname</span></a>
         </li>
         <li class="header">FOOTER</li>
         <li>
-          <a href="<?php echo base_url() ?>Login/logout"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a>
+          <a href="<?php echo base_url() ?>login/logout"><i class="fa fa-sign-out"></i> <span>Sign Out</span></a>
         </li>
       </ul>
       <!-- /.sidebar-menu -->
